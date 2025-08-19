@@ -2,26 +2,28 @@
 
 # 📇 Contact Management System
 
-A simple and efficient **Contact Management System** built with Python. This project helps users **store, view, search, update, and delete contact records**. It is designed to practice file handling, data management, and CRUD operations.
+A Python-based **Contact Management System** that allows users to easily manage contacts.
+The system uses a **CSV file** for storing contacts and provides full **CRUD operations** (Create, Read, Update, Delete) through a simple menu-driven interface.
 
 ---
 
 ## 🚀 Features
 
-* ➕ Add new contacts with name, phone, email, and address
-* 📋 View all saved contacts
-* 🔍 Search for contacts by name or phone number
-* ✏️ Update existing contact details
-* ❌ Delete contacts from the system
-* 💾 Data stored persistently using files / database (based on your implementation)
+* ➕ **Add Contact** – Save new contact details (Name, Number, Email)
+* 📋 **View All Contacts** – Display all saved contacts in a tabular format
+* 🔍 **Search Contact** – Find contacts by **Name**, **Contact Number**, or **Email**
+* ✏️ **Update Contact** – Modify details of an existing contact
+* ❌ **Delete Contact** – Remove a contact from the system
+* 💾 **Persistent Storage** – Contacts are stored in `contacts.csv` file
+* 🛡️ **Preloaded Emergency Numbers** – Police (100), Fire (101), Ambulance (102), Women Helpline (1090), Child Helpline (1098)
 
 ---
 
 ## 🛠️ Tech Stack
 
-* **Language:** Python
-* **Database/Storage:** File Handling / MySQL (depending on version)
-* **Concepts Used:** Functions, Loops, File I/O, CRUD Operations
+* **Language:** Python 3
+* **Library:** `csv` (for file handling)
+* **Storage:** CSV file (`contacts.csv`)
 
 ---
 
@@ -29,9 +31,9 @@ A simple and efficient **Contact Management System** built with Python. This pro
 
 ```
 📁 Contact-Management-System
-│── 📄 main.py            # Entry point of the project
-│── 📄 contacts.txt       # File/database for storing contacts (if file-based)
-│── 📄 README.md          # Project documentation
+│── 📄 main.py        # Main program file (Contact Management System)
+│── 📄 contacts.csv   # CSV file to store contacts (auto-created if not exists)
+│── 📄 README.md      # Project documentation
 ```
 
 ---
@@ -43,7 +45,7 @@ A simple and efficient **Contact Management System** built with Python. This pro
    ```bash
    git clone https://github.com/your-username/contact-management-system.git
    ```
-2. Navigate to the project folder:
+2. Navigate into the project folder:
 
    ```bash
    cd contact-management-system
@@ -53,36 +55,48 @@ A simple and efficient **Contact Management System** built with Python. This pro
    ```bash
    python main.py
    ```
+4. Follow the menu options displayed in the terminal.
 
 ---
 
-## 📸 Screenshots (Optional)
+## 📸 Sample Menu
 
-*Add a few screenshots or demo GIFs of your program running in terminal.*
+```
+=== Contact Management System ===
+1. Add Contact
+2. Show All Contacts
+3. Search Contact
+4. Update Contact
+5. Delete Contact
+6. Exit
+Enter choice: 
+```
 
 ---
 
 ## 🎯 Skills Demonstrated
 
 * Python programming
-* File handling / Database management
-* CRUD operations implementation
-* Problem-solving and logic building
+* File handling with CSV module
+* CRUD operations
+* Menu-driven application design
+* Data validation & duplicate handling
 
 ---
 
 ## 🔮 Future Scope
 
 * Add **GUI support** using Tkinter or PyQt
-* Integrate with **MySQL / SQLite database**
-* Add **export/import contacts** in CSV or Excel format
-* Enable **cloud sync** for contacts
+* Import/Export contacts in **CSV / Excel format**
+* Connect with **SQLite/MySQL database** for large-scale use
+* Add **search filters** (partial matches, case-insensitive search, etc.)
+* Enable **contact groups** and tagging
 
 ---
 
 ## 🤝 Contribution
 
-Contributions, issues, and feature requests are welcome! Feel free to fork this repo and submit a PR.
+Contributions, issues, and feature requests are welcome!
+Feel free to fork the repo and submit a pull request.
 
 ---
-
